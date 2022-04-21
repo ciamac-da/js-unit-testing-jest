@@ -80,7 +80,7 @@ test("User fetched name should be Leanne Graham", () => {
     })
 })
 
-// Asznc Await
+// Async Await
 test("User fetched name should be Leanne Graham", async () => {
     expect.assertions(1);
     const data = await functions.fetchUser()
