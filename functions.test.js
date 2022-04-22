@@ -1,6 +1,32 @@
 // Importing the functions file
 const functions = require("./functions")
 
+//beforeEach(() => initDatabase())
+//afterEach(() => closeDatabase())
+
+
+//beforeAll(() => initDatabase())
+//afterAll(() => closeDatabase())
+
+
+//const initDatabase = () => console.log("Database Initialized...")
+//const closeDatabase = () => console.log("Database Closed...")
+
+const nameCheck = () => console.log("Checking Name...")
+
+describe("Checking Names", () => {
+    beforeEach(() => nameCheck())
+    test("User is Cia", () => {
+        const user = "Cia"
+        expect(user).toBe("Cia")
+    })
+    test("User is Marti4n", () => {
+        const user = "Marti4n"
+        expect(user).toBe("Marti4n")
+    })
+})
+
+
 // toBe
 test("Adds 2 + 2 to equal 4", () => {
     expect(functions.add(2, 2)).toBe(4)
