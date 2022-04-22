@@ -1,6 +1,6 @@
 const reverseString = str =>
     str
-    .toLowercase()
+    .toLowerCase()
     .split("")
     .reverse("")
     .join("")
